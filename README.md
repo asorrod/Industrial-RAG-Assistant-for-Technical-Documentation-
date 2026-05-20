@@ -11,7 +11,7 @@ The system combines semantic search, vector databases, and LLM-based generation 
 - Retrieval-Augmented Generation (RAG) pipeline
 - LLM-based question answering over private documents
 - Experiment tracking with MLflow (WIP / optional)
-- REST API or interactive UI (FastAPI / Streamlit)
+- REST API or interactive UI (FastAPI / Streamlit) (Working on it)
 
 # Tech Stack
 ## Machine Learning & NLP
@@ -22,18 +22,14 @@ The system combines semantic search, vector databases, and LLM-based generation 
 
 ## RAG & LLM Stack
 - LangChain / LlamaIndex
-- OpenAI / Mistral / Llama (depending on setup)
+- Llama
 
 ## Vector Search
-- ChromaDB / FAISS
+- FAISS (Working on it)
 
 ## MLOps & Deployment
 - MLflow (experiment tracking)
 - FastAPI / Streamlit (serving)
-
-## Data Processing
-- Pandas
-- NumPy
 
 # Project Goals
 This project was built to:
