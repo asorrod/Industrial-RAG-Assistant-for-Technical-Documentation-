@@ -1,0 +1,46 @@
+data:
+  data_path: "data/"
+
+chunking:
+  chunk_size: 500
+  overlap: 0.2
+model: 
+
+model:
+  model_name: "sentence-transformers/all-MiniLM-L6-v2"
+
+embeddings:
+  batch_size: 32
+
+storage:
+  embeddings_path: "storage/embeddings.pkl"
+  
+index: 
+  rebuild: false
+
+retrieval:
+  batch_size: 32
+  top_k: 5
+
+prompt:
+  system: |
+    You are a helpful AI assistant.
+    Use ONLY the provided context.
+    If not found, say you don't know.
+
+  template: |
+    Context:
+    {context}
+
+    Question:
+    {query}
+
+    Answer:
+
+llm:
+  model: "llama3"
+  temperature: 0.2
+  stream: false
+  max_tokens: 500
+  top_p: 0.9
+  url: "http://localhost:11434/api/generate"

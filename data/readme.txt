@@ -1,0 +1,1 @@
+Place all the files from which you want the llm assistant to retrieve information in this folder
